@@ -1,1 +1,1 @@
-# brainf*ck interpreter implemented in Python
+# brainf*ck interpreter and REPL implemented in Python
