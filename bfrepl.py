@@ -1,5 +1,5 @@
 import math
-from prompt_toolkit.history import FileHistory
+from prompt_toolkit.history import InMemoryHistory
 from prompt_toolkit import prompt
 
 def num_length(num):
@@ -47,7 +47,7 @@ if __name__ == '__main__':
     stack = [[]]
     code = ''
     repl = REPL()
-    history = FileHistory()
+    history = InMemoryHistory()
     while True:
         code = prompt('>>> ', history=history)
         if code == 'q':
